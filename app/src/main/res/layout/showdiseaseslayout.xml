@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+       android:id="@+id/pershk"
+       android:text="Grip sezonal"
+       android:layout_marginTop="5dp"
+       android:layout_marginLeft="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <ProgressBar
+        android:max="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/pershk"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="90dp"
+        android:maxHeight="15dip"
+        android:minHeight="10dip"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

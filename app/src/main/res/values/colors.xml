@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="black">#000000</color>
+    <color name="ngjyra1">#808080</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="ngjyra2">#EAECEE</color>
+    <color name="ngjyra3">#E8E8E8</color>
+    <color name="ngjyra4">#2B60DE</color>
+    <color name="ngjyra5">#c0d7ca</color>
+    <color name="grey">#C0C0C0</color>
+    <color name ="yellow">#FFD700</color>
+    <color name = "blue1">#0085ff</color>
+    <color name = "aliceblue">#F0F8FF</color>
+</resources>

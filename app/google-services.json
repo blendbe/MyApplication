@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "559157455564",
+    "firebase_url": "https://fir-loginapp-15985.firebaseio.com",
+    "project_id": "fir-loginapp-15985",
+    "storage_bucket": "fir-loginapp-15985.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559157455564:android:fdbe836deb94f94e",
+        "android_client_info": {
+          "package_name": "com.example.acer.myapplicationiu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559157455564-m8jfoh6r90sqjfalne0c6r22u1h16aub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acer.myapplicationiu",
+            "certificate_hash": "97d93d7a1d495f231a07fd781eae124c1ecc7a49"
+          }
+        },
+        {
+          "client_id": "559157455564-uo7bqsh57ga9g51ejeb515re62mm3frs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRi93w0e2Sycp4xDntx4PUCljzJqEOShY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559157455564-uo7bqsh57ga9g51ejeb515re62mm3frs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

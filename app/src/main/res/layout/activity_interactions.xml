@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".Interactions">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?android:attr/windowBackground"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/shto"
+        android:layout_marginLeft="310dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/t12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/bubble"
+        android:layout_alignParentRight="true"
+       android:layout_marginTop="60dp"
+        android:layout_marginRight="10dp"
+        android:text="Kliko ne butonin '+' per te shtuar medikamente"
+        android:padding="10dp"
+        app:arrowWidth="20dp"
+        app:arrowHeight="10dp"
+        app:arrowPosition="135dp"
+        app:arrowLocation="top"
+        app:bubbleColor="#7EC0EE"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content" />
+       <LinearLayout
+           android:id="@+id/lineari"
+           android:layout_marginTop="20dp"
+           android:layout_below="@+id/bubble"
+           android:orientation="vertical"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <ListView
+               android:id="@+id/lstIn"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent">
+
+           </ListView>
+       </LinearLayout>
+</RelativeLayout>

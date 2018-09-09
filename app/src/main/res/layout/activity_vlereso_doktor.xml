@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".VleresoDoktor">
+    <TextView
+        android:textColor="@color/black"
+        android:text="Cka paraqet vleresimi permes 'yjeve'?"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+    <TextView
+        android:text="Permes ketij sherbimi ju vleresoni punen e doktorit ne kater aspekte kryesore:\n
+         1. Profesionalitetin e tij \n          2. Sherbimet e ofruara \n         3. Ndershmerine dhe kredibilitetin \n         4. Fleksibilitetin "
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:progressTint="@color/yellow"
+        android:rating="0.0"
+        android:isIndicator="false"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:id="@+id/rateStars"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/rate"
+        android:textColor="@color/whiteColor"
+        android:text="Vlereso"
+        android:background="#0085FF"
+        android:layout_margin="10dp"
+        android:layout_below="@id/rateStars"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/bb"
+        android:layout_below="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

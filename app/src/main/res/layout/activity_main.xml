@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:src="@drawable/kos1234"
+                android:layout_width="wrap_content"
+                android:layout_height="170dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faqja per qasje ne aplikacion"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:padding="12dp"
+                android:background="@drawable/rounded"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email adresa"
+                android:textColorHint="#AAAAAA"
+                android:textColor="#000"
+                android:id="@+id/etmail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:drawableLeft="@drawable/ic_assignment_ind_black_24dp"
+                android:drawableStart="@drawable/ic_assignment_ind_black_24dp"
+                android:inputType="textEmailAddress"
+                 />
+
+
+            <EditText
+                android:background="@drawable/rounded"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColorHint="#AAAAAA"
+                android:textColor="#000"
+                android:id="@+id/etpass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:hint="Fjalekalimi"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                />
+            <Button
+                android:textAllCaps="false"
+                android:id="@+id/btnLog"
+                android:background="#007AFF"
+                android:text="Kycu"
+                android:textColor="#fff"
+                android:padding="12dp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#007AFF"
+                android:id="@+id/tvRegjistrohu"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:textSize="19sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nuk keni llogari? Regjistrohu."/>
+
+        </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>

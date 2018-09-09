@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedNews">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+          <ImageView
+              android:transitionName="myImage"
+              android:id="@+id/fotoja1"
+              android:scaleType="centerCrop"
+              android:adjustViewBounds="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:src="@drawable/healthy1" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:text="Mënyra të thjeshta për të jetuar shëndetshëm"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:text="Ngado reklamohet stili i shëndetshëm i jetës. Dhe ngado reklamohen produkte dhe aktivitete që vetëm të shëndetshme nuk janë. Dhe një sfidë e madhe, krijohet. Zakonet e tua të vjetra mund të mos jenë të shëndetshme, por ti je mësuar me to. Ose sapo ke zbuluar një restorant me gatime meksikane dhe nuk rri dot pa i provuar çdo ditë, ose çdo javë. Përballë këtyre janë zakonet e shëndetshme, të cilat në momentin e parë nuk të falin asnjë kënaqësi  dhe ti duhet të kesh shumë vullnet të fortë që të bësh ato zgjedhje që janë investim dhe rezultati u shihet në të ardhmen. Është si të kursesh para për pushime, kur një fustan valëvitet para syve të tu në vitrinë.
+Epo, ta dish stili i shëndetshëm i jetës është edhe më i mirë sesa një palë pushime që mbarojnë. Është një formë e mirë trupore, por mbi të gjitha mendore dhe në humor që e ndjen çdo ditë."
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

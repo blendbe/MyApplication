@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/DocsPhoto"
+        android:src="@drawable/person"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+       <TextView
+           android:id="@+id/docsName"
+           android:textSize="18sp"
+           android:text="Filan Fisteku"
+           android:textStyle="bold"
+           android:textColor="@color/black"
+           android:layout_marginTop="15dp"
+           android:layout_toEndOf="@+id/DocsPhoto"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    <RatingBar
+        android:id="@+id/docRating"
+        android:numStars="5"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_toEndOf="@+id/DocsPhoto"
+        android:layout_below="@+id/docsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/docTotalrating"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        android:text="0 vleresime"
+        android:layout_below="@+id/docsName"
+        android:layout_toEndOf="@id/docRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/docsSpeciality"
+        android:text="Mjek i pergjithshem"
+        android:textSize="13sp"
+        android:layout_toEndOf="@+id/DocsPhoto"
+        android:layout_below="@+id/docRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

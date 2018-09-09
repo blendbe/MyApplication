@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:id="@+id/rl1"
+    tools:context=".AdvancedSearchBarActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:id="@+id/shtoSimp"
+            android:text="Shto simptomat"
+            android:textColor="#007AFF"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+     <ScrollView
+         android:layout_below="@id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/eKerkoo"
+        android:hint="P.sh Kokedhimbje"
+        android:layout_marginRight="10dp"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:background="@drawable/editteksti"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:id="@+id/lstView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/eKerkoo"
+        android:dividerHeight="1dp"></ListView>
+    <TextView
+        android:textSize="19dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/simptoms1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <HorizontalScrollView
+        android:layout_below="@+id/simptoms1"
+        android:id="@+id/hsv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="horizontal">
+     <LinearLayout
+         android:layout_marginTop="10dp"
+         android:layout_below="@+id/simptoms1"
+         android:orientation="horizontal"
+         android:id="@+id/linear1"
+         android:layout_width="match_parent"
+         android:layout_height="80dp"></LinearLayout>
+    </HorizontalScrollView>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+        android:layout_marginLeft="5dp"
+        android:text="Vazhdo"
+        android:id="@+id/btnVazhdo"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/simptoms1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnFshij"
+        android:text="Fshij simptomat"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/statusi"
+        android:layout_below="@+id/btnVazhdo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:max="4"
+        android:progressDrawable="@drawable/greenprogress"
+        android:id="@+id/progresbari"
+        android:layout_marginLeft="10dp"
+        android:maxHeight="15dip"
+        android:minHeight="10dip"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="530dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+     </ScrollView>
+</RelativeLayout>

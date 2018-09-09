@@ -1,0 +1,49 @@
+<resources>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_news">Te rejat</string>
+    <string name="nav_settings">Konfigurimet</string>
+    <string name="lessthan"> &lt;</string>
+    <string name="greaterthan">&gt;</string>
+    <string-array name="qytetet">
+        <item>Peje</item>
+        <item>Prishtine</item>
+        <item>Gjakove</item>
+        <item>Gjilan</item>
+    </string-array>
+    <string-array name="kokedhimbja">
+        <item>Kokedhimbje pas kokes</item>
+        <item>Kokedhimbje ne gjysmen e djathte te fytyres</item>
+        <item>Kokedhimbje ne gjysmen e majte te fytyres</item>
+    </string-array>
+    <integer-array name="img_id_arr">
+        <item>@drawable/spitali</item>
+        <item>@drawable/spitali_pejes_1</item>
+        <item>@drawable/spitali_pejes_2</item>
+        <item>@drawable/spitali_pejes_4</item>
+    </integer-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home1">Home</string>
+    <string name="nav_news1">Te rejat</string>
+    <string name="nav_settings1">Konfigurimet</string>
+    <string name="title_activity_find_doctor">FindDoctorActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_pershkrimi">Pershkrimi</string>
+    <string name="title_activity_sqarimet">Sqarimet</string>
+    <string name="title_activity_nav_drawer">NavDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_harta_spitaleve">Map</string>
+</resources>

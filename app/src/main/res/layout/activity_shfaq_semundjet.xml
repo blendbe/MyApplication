@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="?android:attr/windowBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShfaqSemundjet">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar12"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ngjyra1">
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="130dp"
+        android:textAlignment="center"
+        android:drawableEnd="@drawable/ic_error_outline_black_24dp"
+        android:textSize="14sp"
+        android:text="Interpretimi i rezultateve"
+        android:id="@+id/understandresults"
+        android:textColor="#0085FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_margin="15dp"
+        android:text="Semundjet e evidentuara nga lista e simptomave"
+        android:id="@+id/warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <ListView
+       android:outlineProvider="paddedBounds"
+       android:elevation="10dp"
+       android:background="@drawable/delete"
+       android:id="@+id/listashfaq"
+       android:layout_below="@+id/warning"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"></ListView>
+
+
+</LinearLayout>

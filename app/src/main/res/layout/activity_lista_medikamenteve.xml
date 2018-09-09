@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AdvancedSearchBarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/ngjyra3"></android.support.v7.widget.Toolbar>
+
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view_medikamenti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/ngjyra3"
+        app:searchSuggestionBackground="@color/ngjyra3"
+        app:searchCloseIcon="@drawable/ic_close_black_24dp"
+        app:searchBackIcon="@drawable/ic_arrow_back_black_24dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        ></com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+    <ListView
+        android:id="@+id/listamed"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:dividerHeight="1dp"></ListView>
+</RelativeLayout>

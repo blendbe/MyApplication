@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.acer.myapplicationiu">
+
+    <uses-configuration android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_image"
+        android:label="KOSMED"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:replace="android:label">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity
+            android:name=".DashboardActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".Fragment1"></activity>
+        <activity
+            android:name=".CheckSyptomsActivity"
+            android:parentActivityName=".Fragment1" />
+        <activity
+            android:name=".AdvancedSearchBarActivity"
+            android:parentActivityName=".CheckSyptomsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Fragment1" />
+        </activity>
+        <activity
+            android:name=".ShfaqSemundjet"
+            android:parentActivityName=".AdvancedSearchBarActivity" />
+        <activity
+            android:name=".RememberDrugsActivity"
+            android:parentActivityName=".Fragment1" />
+        <activity
+            android:name=".ListaMedikamenteveActivity"
+            android:parentActivityName=".Fragment1" />
+        <activity android:name=".DiseaseExplanationActivity" />
+
+        <receiver
+            android:name=".MedicationAlarm"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".FindDoctorActivity"
+            android:label="@string/title_activity_find_doctor"
+            android:parentActivityName=".DashboardActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.acer.myapplicationiu.DashboardActivity" />
+        </activity>
+        <activity android:name=".AktivitetiHosp" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Sqarimet" />
+        <activity android:name=".AgingWellActivity" />
+        <activity android:name=".Interactions" />
+        <activity
+            android:name=".Interactions1"
+            android:parentActivityName=".Interactions" />
+        <activity android:name=".PostoKomuniteti" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".CommentsActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+        <activity android:name=".PershkrimiHospitalit" />
+        <activity
+            android:name=".IMT"
+            android:parentActivityName=".Fragment1" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".VleresoDoktor" />
+        <activity android:name=".ListaBarnatoreve" />
+        <activity android:name=".MedicationAlarm" />
+        <activity android:name=".CmimiIlaceve" />
+        <activity android:name=".DetailedNews" />
+        <activity android:name=".SymptomChecker" />
+        <activity android:name=".IntExp" />
+        <activity android:name=".ListaSpitaleve" />
+        <activity android:name=".ListaDoktorave" />
+        <activity
+            android:name=".HartaSpitaleve"
+            android:parentActivityName=".FindDoctorActivity"
+            android:label="@string/title_activity_harta_spitaleve"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".PershkrimiHospitalit">
+    <com.chabbal.slidingdotsplash.SlidingSplashView
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:imageResources="@array/img_id_arr"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/emriSpitali"
+        android:layout_marginLeft="10dp"
+        android:text="Spitali regjional i Pejes"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/pershkrimiSpitali"
+        android:layout_marginLeft="10dp"
+        android:text="I hapur 24 ore"
+        android:textSize="18sp"
+        android:layout_below="@+id/emriSpitali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/uebiSpitali"
+        android:textSize="13sp"
+        android:text="Uebsajti i spitalit: http://shskuk.org/spitali-i-pergjithshem-ne-peje/"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/pershkrimiSpitali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/totaliMjekSpitali"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp"
+        android:text="Rreth 260 mjek nga profile te ndryshme jane te punesuar ne kete spital"
+        android:layout_below="@+id/uebiSpitali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/viewSpitali"
+        android:layout_marginTop="5dp"
+        android:background="@color/ngjyra3"
+        android:layout_below="@+id/totaliMjekSpitali"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/zgjedhSpecialitetin"
+        android:layout_marginLeft="10dp"
+        android:textSize="11sp"
+        android:textAlignment="center"
+        android:text="Zgjedh specialitetin per te pare listen e doktoreve nga ai specialitet"
+        android:layout_below="@+id/viewSpitali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linearlay"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/zgjedhSpecialitetin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/listaAH"
+            android:background="@drawable/button_background"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="A-H" />
+
+        <Button
+            android:id="@+id/listaIP"
+            android:background="@drawable/button_background"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="I-P" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/listaQZ"
+            android:background="@drawable/button_background"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Q-Z" />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ListofDocs"
+        android:layout_below="@+id/linearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>

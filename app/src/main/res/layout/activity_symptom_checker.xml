@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomChecker">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolInter"
+        android:background="?android:attr/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolInter1"
+        android:background="@color/ngjyra1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolInter"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/eSymptomChecker"
+            android:textSize="12sp"
+            android:fontFamily="@font/san1234"
+            android:hint="Sheno emrin e medikamentit"
+            android:layout_marginRight="10dp"
+            android:drawableStart="@drawable/ic_search_black_24dp"
+            android:background="@drawable/editteksti"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <Button
+
+            android:id="@+id/btnmosha"
+            android:fontFamily="@font/san1234"
+            android:background="#2B60DE"
+            android:text="moshaecaktuar"
+            android:textColor="#FFF"
+            android:padding="12dp"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/nores"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/listMed"
+        android:divider="@null"
+        android:layout_below="@+id/toolInter1"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"></ListView>
+
+</RelativeLayout>

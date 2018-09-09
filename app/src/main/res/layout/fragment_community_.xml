@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ngjyra3"
+    android:id="@+id/rc1"
+    android:layout_height="match_parent"
+    tools:context=".Community_Fragment">
+     <android.support.design.widget.TabLayout
+         android:id="@+id/tabs"
+         app:tabMode="scrollable"
+         app:tabIndicatorHeight="2dp"
+         app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     <android.support.design.widget.TabItem
+         android:id="@+id/tabItem1"
+         android:textAllCaps="false"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Kancer" />
+          <android.support.design.widget.TabItem
+              android:id="@+id/tabItem2"
+              android:textAllCaps="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Mushkeri" />
+          <android.support.design.widget.TabItem
+              android:id="@+id/tabIte3"
+              android:textAllCaps="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Pergjithshme" />
+          <android.support.design.widget.TabItem
+              android:textAllCaps="false"
+              android:id="@+id/tabItem4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Diabet" />
+          <android.support.design.widget.TabItem
+              android:id="@+id/tabItem5"
+              android:textAllCaps="false"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Gjymtyre" />
+     </android.support.design.widget.TabLayout>
+     <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/tabs"
+         android:id="@+id/community_list_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     </android.support.v7.widget.RecyclerView>
+
+     <android.support.design.widget.FloatingActionButton
+         android:id="@+id/floatingActionButton"
+         android:layout_width="64dp"
+         android:layout_height="64dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentEnd="true"
+         android:layout_marginBottom="27dp"
+         android:layout_marginEnd="30dp"
+         android:clickable="true"
+         android:src="@android:drawable/ic_input_add" />
+
+</RelativeLayout>
